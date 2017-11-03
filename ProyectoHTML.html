@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>La Jornada</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="EstilosProyecto.css">
+	<table>
+		<tr>
+			<td><script languaje="JavaScript"> 
+			var mydate=new Date() 
+			var year=mydate.getYear() 
+			if (year < 1000) 
+			year+=1900 
+			var day=mydate.getDay() 
+			var month=mydate.getMonth() 
+			var daym=mydate.getDate() 
+			if (daym<10) 
+			daym="0"+daym 
+			var dayarray=new Array("Domingo,","Lunes,","Martes,","Miércoles,","Jueves,","Viernes,","Sábado,")
+			var montharray=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre")
+			document.write("<font color='black' face='Georgia' style='font-size:8pt'>"+dayarray[day]+" "+daym+" de "+montharray[month]+" de "+year+"</font>") 
+			</script></font></td>
+			
+			<td><script type="text/javascript">
+			var d = new Date();
+			document.write('Hora -'+d.getHours(), ':'+d.getMinutes())
+			</script>
+			</td>
+		</tr>
+	</table>
+
+<body>
+	<br>
+	<img src="LOGO.png" width="300" height="75">
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<table>
+			<tr>
+				<td height="35"><a href="">FÚTBOL</a></td>
+				<td height="35"><a href="">BALONCESTO</td>
+				<td height="35"><a href="">TENIS</td>
+				<td height="35"><a href="">CICLISMO</td>
+				<td height="35"><a href="">FÓRMULA 1</td>
+				<td height="35"><a href="">OTROS DEPORTES</td>
+			</tr>		
+		</table>
+		<br>
+		<br>
+		<img src="Imagen1.png">
+		<table border="1">
+	<thead>
+			<td colspan="6" height="100" width="150"><img src="Imagen3.gif" height="270"></td>		
+		<tr>
+			<td colspan="6"><img src="LOGO.png" width="120" height="50"> Noticias de actualidad</td>
+		</tr>
+		</thead>
+	<tbody>
+		<tr>
+			<td><img src="oredenador1.png" width="150" height="150"></td>
+			<td><ul>
+			<li><b>HP Omen</b></li>
+			<li>Disco Duro SSD 250 Gb</li>
+			<li>8 Gb de Ram</li>
+			<li>Procesador Intel I7</li>
+			</ul>
+			</td>
+			<td></td>
+			<td><h2>Título Noticia</h2>
+				<p>Breve texto explicando la noticia... <a href="PAGINA DE LA NOTICIA">Leer más</p></td>
+			<td rowspan="3"><H1>SUSCRÍBETE</H1>
+			<form><fieldset>
+				<p>Nombre :</p><input type="text" name="Nombre" required><br>
+				<p>Email :</p><input type="Email" name="Email" required><br>
+				<p>Puntos :</p><input type="number" min="18" max="90" name="Puntos"><br>
+				<p>Fecha Nac :</p><input type="datetime" name="Fecha"><br>
+				<p>Tipo de suscripción :</p>
+				<input type="radio" name="##" class="Producto">Paypal<br>
+				<input type="radio" name="##" class="Producto">Cuenta Bancaria<br>
+				<input type="radio" name="##" class="Producto">Tarjeta de crédito<br>
+
+				<p>Escoja la forma de pago</p><select>
+				<option value="Al Contado">Al Contado</option>
+				<option value="Tarjeta">Tarjeta</option>
+				<option value="Monedas de 1 cent">Monedas de 1 Cent</option>
+				</select><br><br>
+
+				<input type="submit" name="Enviar Datos" width="15">
+
+				</fieldset>
+			</form></td>
+		</tr>
+		<tr>
+			<td><img src="Ordenador2.png" width="150" height="150"></td>
+			<td><h2>Título Noticia</h2><br>
+				<p>Breve texto explicando la noticia... <a href="PAGINA DE LA NOTICIA">Leer más</p>
+			<td rowspan="2"><h2>Título Noticia</h2>
+			<p>Breve texto explicando la noticia... <a href="PAGINA DE LA NOTICIA">Leer más</p></td>
+			<td rowspan="2"><h2>Título Noticia</h2><
+				<p>Breve texto explicando la noticia... <a href="PAGINA DE LA NOTICIA">Leer más</a>
+			</td>	
+		</tr>
+		<tr>
+			<td><p>Sale a la luz la nueva equipación que lucirá la selección española en 2018</p>><img src="macddr.png" width="150" height="150"></td>
+			<td><h2>Título Noticia</h2>
+				<p>Breve texto explicando la noticia... <a href="PAGINA DE LA NOTICIA">Leer más</p></td>
+		</tr>
+	</tbody>
+
+	</table>
+	
+<!-- <form>
+	<fieldset><legend>Inicia sesión</legend>
+	<p>Nombre</p><input type="text" name="Nombre"><br>
+	<p>Apellidos</p><input type="text" name="Apellidos"><br>
+	<p>Fecha de nacimiento</p><input type="month" name="FechaNac"><br>
+	<h1>NombrePeriodico</h1>
+	<h1>NombrePeriodico</h1>	
+
+</head>
+<body>
+<form>
+	<fieldset><legend><h2>Inicia sesión</h2></legend>
+	<p>Nombre</p><input type="text" name="Nombre">
+	<p>Apellidos</p><input type="text" name="Apellidos">
+	<p>Fecha de nacimiento</p><input type="date" name="FechaNac">
+>>>>>>> f2aa894f847470955bc7352f2c7d18be5ace1873
+	<p>Correo electrónico</p><input type="email" name="Correo">
+	<p>Dirección</p><input type="text" name="">
+	<p>Provincia</p><input type="text" name="">
+
+</fieldset>
+</form> -->
+</body>
+</html>
